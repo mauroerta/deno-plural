@@ -7,7 +7,7 @@ deno-plural module helps you to pluralize or singularize a given word.
 You just need to import the singular and plural functions from `deno.land`:
 
 ```typescript
-import { singular, plural } from "https://deno.land/x/deno-plural/mod.ts";
+import { singular, plural } from "https://deno.land/x/deno_plural/mod.ts";
 ```
 
 And use it!
@@ -20,7 +20,7 @@ const singularWord = singular(`feet`); // Will return the string `foot`
 ## 🎓 Example
 
 ```typescript
-import { singular, plural } from "https://deno.land/x/deno-plural/mod.ts";
+import { singular, plural } from "https://deno.land/x/deno_plural/mod.ts";
 
 const singulars = ["foot", "computer"];
 
