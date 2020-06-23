@@ -1,3 +1,5 @@
+[![GitHub issues](https://img.shields.io/github/issues/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/issues) [![GitHub forks](https://img.shields.io/github/forks/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/network) [![GitHub stars](https://img.shields.io/github/stars/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/stargazers) [![GitHub license](https://img.shields.io/github/license/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/blob/master/LICENSE)
+
 # Deno Plural ~ 🙏🏻 = 🍞 🐟
 
 deno-plural module helps you to pluralize or singularize a given word.
