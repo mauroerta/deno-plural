@@ -26,7 +26,7 @@ import { singular, plural } from "https://deno.land/x/deno_plural/mod.ts";
 
 const singulars = ["foot", "computer"];
 
-let plurals = [];
+let plurals: string[] = [];
 
 console.log("Testing singular --> plural");
 singulars.forEach((word) => {
