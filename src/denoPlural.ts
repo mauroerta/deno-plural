@@ -32,7 +32,7 @@ export function singular(string: string): string {
   }
 
   for (const w of irregularsKeys) {
-    const pattern = new RegExp(`${w}$`, "i");
+    const pattern = new RegExp(`^${w}$`, "i");
     const replace = notRegulars[w];
     if (pattern.test(string)) {
       return string.replace(pattern, replace);
