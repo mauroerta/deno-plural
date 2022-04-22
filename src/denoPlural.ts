@@ -66,12 +66,19 @@ export function plural(string: string): string {
     return response;
   }
 
+  for (const w of uncountables) {
+    if (typeof w === "string") {
+      if(string.toLowerCase() === w) return response;
+    } else if (w instanceof RegExp) {
+      if(w.test(string)) return response;
+    }
+  }
   if (uncountables.indexOf(string.toLowerCase()) >= 0) {
     return response;
   }
 
   for (const w of irregularsKeys) {
-    const pattern = new RegExp(`${w}$`, "i");
+    const pattern = new RegExp(`^${w}$`, "i");
     const replace = irregulars[w];
 
     if (pattern.test(string)) {
