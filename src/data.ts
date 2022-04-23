@@ -1,24 +1,3 @@
-const plurals_old: Record<string, string> = {
-  "(quiz)$": "$1zes",
-  "^(ox)$": "$1en",
-  "([m|l])ouse$": "$1ice",
-  "(matr|vert|ind)ix|ex$": "$1ices",
-  "(x|ch|ss|sh)$": "$1es",
-  "([^aeiouy]|qu)y$": "$1ies",
-  "(hive)$": "$1s",
-  "(?:([^f])fe|([lr])f)$": "$1$2ves",
-  "(shea|lea|loa|thie)f$": "$1ves",
-  sis$: "ses",
-  "([ti])um$": "$1a",
-  "(tomat|potat|ech|her|vet)o$": "$1oes",
-  "(bu)s$": "$1ses",
-  "(alias)$": "$1es",
-  "(octop)us$": "$1i",
-  "(ax|test)is$": "$1es",
-  "(us)$": "$1es",
-  "([^s]+)$": "$1s",
-};
-
 const plurals: Record<string, string> = {
   "m[ae]n$": "men",
   "eaux$": "$&",
