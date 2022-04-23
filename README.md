@@ -52,3 +52,7 @@ Testing plural --> singular
 The singular of feet is foot
 The singular of computers is computer
 ```
+
+## pray Thanks
+
+This project could not exist without the work of [pluralize](https://github.com/plurals/pluralize).
