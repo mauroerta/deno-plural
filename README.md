@@ -27,8 +27,13 @@ const singularWord = singular(`feet`); // Will return the string `foot`
 ### Add a new Language
 
 ```typescript
-import { plural, singular, addRules, setLanguage } from "https://deno.land/x/deno_plural/mod.ts";
-import itRules from "./myCustomRules/it.ts"
+import {
+  addRules,
+  plural,
+  setLanguage,
+  singular,
+} from "https://deno.land/x/deno_plural/mod.ts";
+import itRules from "./myCustomRules/it.ts";
 
 addRules("it", itRules);
 
@@ -53,7 +58,7 @@ declare module "https://deno.land/x/deno_plural/mod.ts" {
 ```typescript
 import { plural, singular } from "https://deno.land/x/deno_plural/mod.ts";
 
-const pluralWord = plural(`persona`, 'it'); // Will return the string  `persone`
+const pluralWord = plural(`persona`, "it"); // Will return the string  `persone`
 const singularWord = singular(`people`); // Will return the string `person`
 ```
 
