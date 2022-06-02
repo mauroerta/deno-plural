@@ -22,6 +22,41 @@ const pluralWord = plural(`foot`); // Will return the string  `feet`
 const singularWord = singular(`feet`); // Will return the string `foot`
 ```
 
+## 🤓 Advanced
+
+### Add a new Language
+
+```typescript
+import { plural, singular, addRules, setLanguage } from "https://deno.land/x/deno_plural/mod.ts";
+import itRules from "./myCustomRules/it.ts"
+
+addRules("it", itRules);
+
+setLanguage("it");
+
+const pluralWord = plural(`persona`); // Will return the string  `persone`
+const singularWord = singular(`persone`); // Will return the string `persona`
+```
+
+Don't forget to also augment the type definition or Typescript will complain!
+
+```typescript
+declare module "https://deno.land/x/deno_plural/mod.ts" {
+  interface Languages {
+    it: string;
+  }
+}
+```
+
+### Use another language one-time
+
+```typescript
+import { plural, singular } from "https://deno.land/x/deno_plural/mod.ts";
+
+const pluralWord = plural(`persona`, 'it'); // Will return the string  `persone`
+const singularWord = singular(`people`); // Will return the string `person`
+```
+
 ## 🎓 Example
 
 ```typescript
