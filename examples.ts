@@ -1,4 +1,4 @@
-import { singular, plural } from "./mod.ts";
+import { plural, singular } from "./mod.ts";
 
 const singulars = ["foot", "computer"];
 

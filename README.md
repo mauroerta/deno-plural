@@ -1,4 +1,7 @@
-[![GitHub issues](https://img.shields.io/github/issues/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/issues) [![GitHub forks](https://img.shields.io/github/forks/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/network) [![GitHub stars](https://img.shields.io/github/stars/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/stargazers) [![GitHub license](https://img.shields.io/github/license/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/issues)
+[![GitHub forks](https://img.shields.io/github/forks/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/network)
+[![GitHub stars](https://img.shields.io/github/stars/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/stargazers)
+[![GitHub license](https://img.shields.io/github/license/mauroerta/deno-plural)](https://github.com/mauroerta/deno-plural/blob/master/LICENSE)
 
 # Deno Plural ~ 🙏🏻 = 🍞 🐟
 
@@ -9,7 +12,7 @@ deno-plural module helps you to pluralize or singularize a given word.
 You just need to import the singular and plural functions from `deno.land`:
 
 ```typescript
-import { singular, plural } from "https://deno.land/x/deno_plural/mod.ts";
+import { plural, singular } from "https://deno.land/x/deno_plural/mod.ts";
 ```
 
 And use it!
@@ -22,7 +25,7 @@ const singularWord = singular(`feet`); // Will return the string `foot`
 ## 🎓 Example
 
 ```typescript
-import { singular, plural } from "https://deno.land/x/deno_plural/mod.ts";
+import { plural, singular } from "https://deno.land/x/deno_plural/mod.ts";
 
 const singulars = ["foot", "computer"];
 
@@ -55,4 +58,5 @@ The singular of computers is computer
 
 ## 🙏 Thanks
 
-This project could not exist without the work of [pluralize](https://github.com/plurals/pluralize).
+This project could not exist without the work of
+[pluralize](https://github.com/plurals/pluralize).
