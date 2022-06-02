@@ -102,9 +102,9 @@ Deno.test({
 });
 
 Deno.test({
-  name:
-    "changing language - should change the language when `setLanguage` is called",
+  name: "changing language - should change the language when `setLanguage` is called",
   fn: (): void => {
+    // deno-lint-ignore no-explicit-any
     setLanguage("it" as any);
     assertEquals(getCurrentLanguage(), "it");
   },
@@ -113,6 +113,7 @@ Deno.test({
 Deno.test({
   name: "adding rules - add rules for the specified language",
   fn: (): void => {
+    // deno-lint-ignore no-explicit-any
     addRules("it" as any, {
       singulars: {
         persone: "persona",
@@ -121,15 +122,16 @@ Deno.test({
       plurals: {},
       uncountables: [],
     });
+    // deno-lint-ignore no-explicit-any
     setLanguage("it" as any);
     assertEquals(singular("persone"), "persona");
   },
 });
 
 Deno.test({
-  name:
-    "change language inline - should resolve the singular/plural for the indicated language only for that time",
+  name: "change language inline - should resolve the singular/plural for the indicated language only for that time",
   fn: (): void => {
+    // deno-lint-ignore no-explicit-any
     addRules("it" as any, {
       singulars: {
         persone: "persona",
@@ -139,6 +141,7 @@ Deno.test({
       uncountables: [],
     });
 
+    // deno-lint-ignore no-explicit-any
     assertEquals(singular("persone", "it" as any), "persona");
     assertEquals(singular("people"), "person");
   },
