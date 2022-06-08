@@ -1,8 +1,8 @@
-import { singular, plural } from "./mod.ts";
+import { plural, singular } from "./mod.ts";
 
 const singulars = ["foot", "computer"];
 
-let plurals: string[] = [];
+const plurals: string[] = [];
 
 console.log("Testing singular --> plural");
 singulars.forEach((word) => {
